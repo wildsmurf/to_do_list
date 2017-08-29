@@ -1,0 +1,18 @@
+<h1>New To Do</h1>
+
+<%= form_for @todo do |f| %>
+
+<div>
+  <%= f.label :list %>
+  <%= f.text_field :list, placeholder: 'New Thing ToDo', required: true %>
+</div>
+<div>
+  <%= f.label :description %>
+  <%= f.text_field :description, placeholder: 'Description', required: false %>
+</div>
+<div>
+  <%= f.label :completeby %>
+  <%= f.date_select :completeby, required: false %>
+</div>
+  <%= f.submit %>
+<% end %>

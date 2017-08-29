@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  list: MyString
+  description: MyString
+  completeby: 2017-08-28
+
+two:
+  list: MyString
+  description: MyString
+  completeby: 2017-08-28

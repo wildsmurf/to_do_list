@@ -1,0 +1,5 @@
+<h1><%= @todo.list %></h1>
+<h4><%= @todo.description %></h4>
+<p>Complete by this day: <%= @todo.completeby %></p>
+<%= link_to 'Edit', edit_to_do_path(@todo) %>
+<%= link_to 'Back', to_dos_path %>

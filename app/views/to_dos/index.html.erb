@@ -1,0 +1,10 @@
+<h1>To Do List</h1>
+
+<p><%= link_to 'New Thing To Do', new_to_do_path %></p>
+
+<% @todos.each do |todo| %>
+  <div>
+    <h2><%= todo.list %> <%= link_to 'Show Notes', to_do_path(todo) %></h2>
+    <%= link_to 'Delete', to_do_path(todo), method: :delete %>
+  </div>
+<% end %>
